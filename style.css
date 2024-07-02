@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+  }
+  
+body {
+    width: auto;
+    height: 100vh;
+
+    /* Направление градиента по вертикали от белого сверху к розовому снизу */
+    background-image: linear-gradient(to bottom right, rgb(146, 238, 220), rgb(49, 50, 120));
+  }
+.todo h1{
+    
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+  }
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background:#ffffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.insert{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+.insert input{
+    flex:1;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 14px;
+    background: transparent;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    background-color: #ffffff;
+    padding: 1px 8px 12px 6px;
+    
+}
+ul li::before{
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+  button{
+    position:relative;
+
+    cursor: pointer;
+    margin-left:10px;
+    padding: 0.5em 0.5em; /* Поля по вертикали и горизонтали */
+    background-color: green; 
+    font-size: 0.9em; /* Размер текста */
+    text-transform: uppercase; /* Все буквы заглавные */
+    color: white; /* Цвет текста */
+    border: 2px solid green; /* Параметры рамки */
+    border-radius: 0.4em; /* Радиус скругления */
+    transition: all 500ms ease;
+      
+  }
+  button:hover {
+    background: rgba(0,0,0,0);
+    color: green;
+    
+  }
+  .deleteBtn{
+    border: 2px solid red; /* Параметры рамки */
+    color:white;
+    background-color: red;
+    transition: all 500ms ease;
+    
+  }
+  .deleteBtn:hover {
+    background: rgba(0,0,0,0);
+    color: red;
+    
+  }
+  .editBtn{
+    border: 2px solid blue; /* Параметры рамки */
+    color:white;
+    background-color: blue;
+    transition: all 500ms ease;
+    
+  }
+  .editBtn:hover {
+    background: rgba(0,0,0,0);
+    color: blue;
+    
+  }
+  .clearBtn{
+    position:absolute;
+    border: 2px solid red; /* Параметры рамки */
+    color:white;
+    background-color: red;
+    transition: all 500ms ease;
+  }
+  .clearBtn:hover {
+    background: rgba(0,0,0,0);
+    color: red;
+    
+  }
+  .saveBtn{
+    position: absolute;
+    left: 50%;
+
+  }
+.taskInput{
+    flex:2;
+    width: 200px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 14px;
+    margin-left:6px;
+    background: transparent;
+}
